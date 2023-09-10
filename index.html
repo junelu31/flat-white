@@ -1,22 +1,24 @@
 <!DOCTYPE html>
+
 <head>
-    <title> 
+    <title>
         🌱 june's definitely professional website
     </title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fragment+Mono&display=swap" rel="stylesheet">
     <style>
-        p.indent 
-        {
+        p.indent {
             text-indent: 40px;
         }
-        :root
-        {
-            --lightlavendar: #E1DEE9; /*background*/
+
+        :root {
+            --lightlavendar: #D4BEBE;
+            /*background*/
 
 
         }
+
         /*
         Colours:
         A09ABC
@@ -26,52 +28,82 @@
         D4BEBE
         */
 
-        body 
-        {
+        body {
             font-family: 'Fragment Mono', monospace;
             background-color: var(--lightlavendar);
-            max-width: 600px;
+            max-width: 800px;
             margin: 0 auto;
         }
-        h1, h3
-        {
+
+        h1,
+        h3 {
             color: black;
             font-weight: normal;
-            
+
         }
-        #university
-        {
+
+        #university {
             color: #bf5700
         }
-        /* h3
-        {
-            font-weight: normal;
-        } */
 
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Create two equal columns that floats next to each other */
+        .column {
+            float: left;
+            width: 50%;
+            padding: 10px;
+            height: 300px;
+            /* Should be removed. Only for demonstration */
+        }
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        #top-pic{
+            padding-right: 30px;
+        }
+        #banner{
+            width: 800px; height: 100px; object-fit: cover;
+        }
+        a:link {
+            color: A09ABC;
+        }
+        a:visited{
+            color: D4BEBE;
+        }
     </style>
 </head>
+
 <body>
-        <center>
-            <h1>
-                🪴 june chuang 🌸
-            </h1>
-            <h3>
-                ⚙️ mechanical engineer | they/she | junior at
-                <span id="university">
-                    
-                    the university of austin at texas 
-                </span>
-                | 
-            </h3>
-        </center>
-        <br>
-        <h2 id="about">
-            
-            about:
-        </h2>
-        <p class="indent">
-            :33333
-            <br>
-        <p>
+    <img id="banner" src="https://64.media.tumblr.com/752e98a41362e1c7e51c7a50a78c179c/317f3fca563a82e5-a4/s1280x1920/187cb60ba078ceeefb7d36860495fdde9aec83b9.gifv"
+         alt="https://mini-moss.tumblr.com/" />
+    <center>
+        <h1>
+            🪴 june chuang 🌸
+        </h1>
+        <hr>
+        <h3>
+            ⚙️ mechanical engineer | they/she | junior at
+            <span id="university">
+                the university of austin at texas
+            </span>
+            | <a href="Resources\resume.pdf" target="_blank"> resume </a>
+        </h3>
+        <hr>
+    </center>
+    <p>
+        <img id="top-pic" src="https://64.media.tumblr.com/14b762b7ef0c9a2015b6dcf6ca0ca917/b148508426dfdbcf-72/s640x960/57fa5bef97f31bafa2ebc96991a3061222da223c.gifv"
+            height="300" align="left" 
+            "alt = https://mini-moss.tumblr.com/" 
+            />
+            <p>
+                Hi!
+                <br>
+                I am
+            </p>
 
 </body>
