@@ -1,3 +1,13 @@
+.gridTitle {
+    display: grid;
+    gap: 1rem;
+    grid-template-rows: 1fr 1fr;
+}
+.gridBody {
+    display:grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 60%;
+}
 p.indent {
     text-indent: 40px;
 }
@@ -35,7 +45,8 @@ h3 {
     color: var(--burnt-orange);
 }
 #top-pic{
-    padding-right: 30px;
+   padding-right: 30px;
+   padding-bottom: 30px;
 }
 #banner{
     width: 800px; height: 100px; object-fit: cover;
@@ -45,4 +56,24 @@ a:link {
 }
 a:visited{
     color: var(--sat-purple);
+}
+#crabapple
+{
+    color:#d77e70
+}
+#cloud
+{
+    color: #04aaaa
+}
+#mule
+{
+    color: rgb(84, 114, 40)
+}
+#contact
+{
+    line-height: 2em;
+}
+.status
+{
+    background-color: #beaa8a;
 }
