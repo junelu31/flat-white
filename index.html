@@ -7,77 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fragment+Mono&display=swap" rel="stylesheet">
-    <style>
-        p.indent {
-            text-indent: 40px;
-        }
-
-        :root {
-            --lightlavendar: #D4BEBE;
-            /*background*/
-
-
-        }
-
-        /*
-        Colours:
-        A09ABC
-        B6A6CA
-        D5CFE1
-        E1DEE9 -- Background
-        D4BEBE
-        */
-
-        body {
-            font-family: 'Fragment Mono', monospace;
-            background-color: var(--lightlavendar);
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        h1,
-        h3 {
-            color: black;
-            font-weight: normal;
-
-        }
-
-        #university {
-            color: #bf5700
-        }
-
-        * {
-            box-sizing: border-box;
-        }
-
-        /* Create two equal columns that floats next to each other */
-        .column {
-            float: left;
-            width: 50%;
-            padding: 10px;
-            height: 300px;
-            /* Should be removed. Only for demonstration */
-        }
-        .row:after {
-            content: "";
-            display: table;
-            clear: both;
-        }
-        #top-pic{
-            padding-right: 30px;
-        }
-        #banner{
-            width: 800px; height: 100px; object-fit: cover;
-        }
-        a:link {
-            color: A09ABC;
-        }
-        a:visited{
-            color: D4BEBE;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
     <img id="banner" src="https://64.media.tumblr.com/752e98a41362e1c7e51c7a50a78c179c/317f3fca563a82e5-a4/s1280x1920/187cb60ba078ceeefb7d36860495fdde9aec83b9.gifv"
          alt="https://mini-moss.tumblr.com/" />
@@ -91,19 +22,41 @@
             <span id="university">
                 the university of austin at texas
             </span>
-            | <a href="Resources\resume.pdf" target="_blank"> resume </a>
         </h3>
         <hr>
+        <a href="#about">about</a> 
+        | <a href="#contact">contact</a>
+        | <a href="Resources\resume.pdf" target="_blank">resume</a> 
+        | <a href="blog.html">blog and projects</a> 
     </center>
     <p>
         <img id="top-pic" src="https://64.media.tumblr.com/14b762b7ef0c9a2015b6dcf6ca0ca917/b148508426dfdbcf-72/s640x960/57fa5bef97f31bafa2ebc96991a3061222da223c.gifv"
             height="300" align="left" 
             "alt = https://mini-moss.tumblr.com/" 
             />
-            <p>
+            <div id="about">
                 Hi!
                 <br>
-                I am
-            </p>
+                <br>
+                My name's June, and I'm a mechanical engineering junior at the University of Texas at Austin. 
+                My interests include thermofluid analysis and materials design and manufacturing.
+                <br>
+                <br>
+                
+            </div>
+            <div id="contact">
+                <h1>
+                    <strong>contact info</strong>
+                </h1> 
+                    <p>
+                        <div>
+                        email: junelu31@gmail.com
+                        </div>
+                        <div>
+
+                        </div>
+
+                    </p>
+            </div>
 
 </body>

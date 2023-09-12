@@ -1,0 +1,48 @@
+p.indent {
+    text-indent: 40px;
+}
+
+:root {
+    --light-lavendar: #D4BEBE;
+    --burnt-orange: #bf5700;
+    --sat-purple: #7f6dd1;
+    /*background*/
+}
+/*
+Colours:
+#A09ABC
+#B6A6CA
+#D5CFE1
+#E1DEE9 -- Background
+#D4BEBE
+#7f6dd1 -- Hyperlinks
+*/
+body {
+    font-family: 'Fragment Mono', monospace;
+    background-color: var(--light-lavendar);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1,
+h3 {
+    color: black;
+    font-weight: normal;
+
+}
+
+#university {
+    color: var(--burnt-orange);
+}
+#top-pic{
+    padding-right: 30px;
+}
+#banner{
+    width: 800px; height: 100px; object-fit: cover;
+}
+a:link {
+    color: var(--sat-purple);
+}
+a:visited{
+    color: var(--sat-purple);
+}
