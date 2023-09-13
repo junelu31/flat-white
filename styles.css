@@ -85,5 +85,11 @@ a:visited{
     border-top-style: solid;
     border-bottom-style: solid;
     border-width: .08em;
-
+}
+#zorua
+{
+    background: #2E0026;
+    background: linear-gradient(to right, #2E0026 0%, #CF1512 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
