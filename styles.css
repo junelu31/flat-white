@@ -2,7 +2,7 @@
 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows:  .5fr .25fr auto 4fr;
+    grid-template-rows:  .5fr .25fr auto .25fr 1.5fr .25fr 1.5fr;
     justify-items: center;
     align-items: top;
     row-gap: 1em;
@@ -28,11 +28,21 @@
 {
     height:100px;
 }
+.thoughtsHead
+{
+    grid-row: 4/5;
+    grid-column: 1/7;
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+    margin-right: 5px;
+    flex-wrap: nowrap;
+}
 .thoughts
 {
     /*grid-area: 4/1/6/4*/ 
-    grid-row: 4/6;
-    grid-column: 1/4;
+    grid-row: 5/6;
+    grid-column: 1/7;
     display: flex;
     flex-direction: column;
     min-width: 100%;
@@ -42,7 +52,7 @@
     scrollbar-color: #665e52 #D4BEBE ;
     scrollbar-width:thin;
     scrollbar-highlight-color: #665e52;
-    max-height:600px;
+    max-height:200px;
     padding: 5px;
 }
 .blogCard
@@ -59,9 +69,19 @@
     padding-left: 20px;
     padding-top: 0px;
 }
+.projectsHead
+{
+    grid-area: 6/1/7/7;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    min-width: 100%;
+    flex-wrap: nowrap;
+    margin-left:10px;
+}
 .projects
 {
-    grid-area: 4/4/6/7;
+    grid-area: 7/1/8/7;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -72,7 +92,7 @@
     scrollbar-color: #665e52 #D4BEBE ;
     scrollbar-width:thin;
     scrollbar-highlight-color: #665e52;
-    max-height:600px;
+    max-height:200px;
     padding: 5px;
 }
 .gridTitle {
@@ -136,24 +156,29 @@ h3 {
     color: black;
     font-weight: normal;
 }
-.thoughts h3 {
+.thoughtsHead h3 {
     color: black;
     font-weight: normal;
+    font-size:x-large;
     background-color: #beaa8a;
     margin-bottom: 5px;
+    margin-top: 0px;
 
 }
-.thoughts h4{
+.thoughtsHead h4{
     font-weight: normal;
     margin-top: 0px;
+    margin-bottom: 0px;
 }
-.projects h3 {
+.projectsHead h3 {
     color: black;
     font-weight: normal;
+    font-size:x-large;
     background-color: #beaa8a;
     margin-bottom: 5px;
+    margin-top: 0px;
 }
-.projects h4{
+.projectsHead h4{
     font-weight: normal;
     margin-top: 0px;
 }
