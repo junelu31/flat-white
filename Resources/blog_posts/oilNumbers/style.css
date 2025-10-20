@@ -1,0 +1,114 @@
+:root {
+    --light-lavendar: #D4BEBE;
+    --burnt-orange: #bf5700;
+    --sat-purple: #7f6dd1;
+}
+
+body {
+    font-family: 'Fragment Mono', monospace;
+    background-color: var(--light-lavendar);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1,
+h3 {
+    color: black;
+    font-weight: normal;
+}
+
+a:link {
+    color: var(--sat-purple);
+}
+a:visited{
+    color: var(--sat-purple);
+}
+
+/* Reusing gridcontainer and related styles from original CSS for layout consistency */
+.gridcontainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: .5fr .25fr auto; /* Adapted for simple blog post layout */
+    justify-items: center;
+    align-items: top;
+    row-gap: 1em;
+}
+
+.title {
+    /* grid-area: 1/1/1/2; spans the single column */
+    grid-row: 1;
+    grid-column: 1;
+    width: 100%;
+}
+
+.navBar {
+    /* grid-area: 2/1/2/2; spans the single column */
+    grid-row: 2;
+    grid-column: 1;
+    width: 100%;
+    text-align: center; /* Center the navigation links */
+}
+
+.status {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #beaa8a;
+}
+
+/* New section for the blog post content */
+.blog-content {
+    grid-row: 3;
+    grid-column: 1;
+    padding: 20px;
+    background-color: white; /* Using a contrasting background for the article body */
+    border: 1px solid black;
+    width: 95%; /* Adjust width to fit within gridcontainer */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    text-align: justify;
+}
+
+.blog-content h1,
+.blog-content h2,
+.blog-content h3 {
+    text-align: left;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.image-container {
+    text-align: center;
+    margin: 1.5em 0;
+}
+
+.content-image {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Ensures centering works */
+    margin: 0 auto;
+}
+
+.table-images {
+    display: flex;
+    flex-wrap: wrap; /* Allows images to stack on small screens */
+    justify-content: space-around;
+}
+
+.content-image-half {
+    max-width: 48%; /* Allows two images side-by-side with a small gap */
+    height: auto;
+    margin: 5px 0;
+}
+
+/* Style for the small text below the image */
+.image-container small {
+    display: block;
+    margin-top: 5px;
+    font-style: italic;
+    color: #555;
+}
+
+/* Ensure the main content uses the body's font */
+.blog-content p, .blog-content small, .blog-content a {
+    font-family: 'Fragment Mono', monospace;
+    line-height: 1.6;
+}
