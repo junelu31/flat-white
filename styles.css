@@ -175,7 +175,7 @@ p.indent {
     flex-wrap: nowrap;
     overflow-y:scroll;
     scrollbar-color: #665e52 #D4BEBE ;
-    scrollbar-width:thin;
+    scrollbar-width:auto;
     scrollbar-highlight-color: #665e52;
     max-height:200px;
     padding: 5px;
@@ -214,7 +214,7 @@ p.indent {
     margin-left:10px;
     overflow-y:scroll;
     scrollbar-color: #665e52 #D4BEBE ;
-    scrollbar-width:thin;
+    scrollbar-width:auto;
     scrollbar-highlight-color: #665e52;
     max-height:200px;
     padding: 5px;
