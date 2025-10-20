@@ -109,6 +109,6 @@ a:visited{
 
 /* Ensure the main content uses the body's font */
 .blog-content p, .blog-content small, .blog-content a {
-    font-family: 'Fragment Mono', monospace;
+    font-family: "Inter", sans-serif;
     line-height: 1.6;
 }
